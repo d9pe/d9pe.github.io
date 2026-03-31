@@ -1,14 +1,14 @@
 {
-  "hero_title": "blackspike astro landing page",
-  "hero_content": "<p><strong>A free Astro landing theme made with Tailwind</strong> to help kick start your Astro website.</p><p>Uses modern CSS and HTML features for added zip, plus a slick swiper carousel. All in Astro JSX.</p>",
-  "services_title": "Our services",
-  "clients_title": "Trusted by some great companies",
-  "testimonials_title": "Clients ♥ us",
-  "case_studies_title": "Case studies",
+  "hero_title": "Hello Dots",
+  "hero_content": "<p><strong>Wir erschaffen zeitlose visuelle Identitäten für moderne Marken.</strong></p><p>Großartige Unternehmen entstehen durch die Fähigkeit, sich anzupassen und zu wachsen. Wir verbinden die Punkte Ihrer Vision zu einer Marke, die beständig bleibt – egal, wohin der Markt sich entwickelt.</p>",
+  "services_title": "Unser Service",
+  "clients_title": "Kunden die uns vertrauen",
+  "testimonials_title": "Kunden ♥ uns",
+  "case_studies_title": "Referenzen",
   "pricing_title": "We do design retainers",
-  "quote_content": "This <strong>design agency</strong> is a <strong>game changer</strong>. Its <strong>creative vision</strong>, <strong>user-focused approach</strong>, and <strong>seamless collaboration</strong> have <strong>transformed</strong> the way we <strong>build our brand</strong>. It’s <strong>not just an agency</strong> — it’s a <strong>powerful partner</strong> that <strong>delivers real results</strong>.",
-  "quote_cite": "Sean Higgins",
-  "quote_role": "CTO, Interia",
-  "quote_image": "/content-images/quote-man.avif",
-  "faq_title": "Frequently Asked Questions"
+  "quote_content": "<strong>Hello Dots</strong> ist ein absoluter <strong>Game Changer</strong>. Ihre <strong>kreative Vision</strong>, der <strong>nutzerzentrierte Ansatz</strong> und die <strong>reibungslose Zusammenarbeit</strong> haben die Art und Weise, wie wir unsere <strong>Marke aufbauen</strong>, grundlegend transformiert. Sie sind <strong>nicht einfach nur eine Agentur</strong>. Sie sind ein <strong>starker Partner</strong>, der <strong>echte Ergebnisse</strong> liefert.",
+  "quote_cite": "Eddie Erdem",
+  "quote_role": "Vorstandsvorsitzender, Sportclub Düsseldorf e.V.",
+  "quote_image": "/content-images/eddie-erdemn.jpeg",
+  "faq_title": "Häufig gestellte Fragen"
 }

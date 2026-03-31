@@ -28,5 +28,15 @@
     "image": "/content-images/brighton.dog.avif",
     "image_alt": "iPad showing the web page of brighton.dog",
     "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
+  },
+    {
+    "title": "Accelerating Innovation.<br>Empowering Results.",
+    "sector": "Development",
+    "content": "Our dynamic design and build simplified productivity, delivering automated solutions, seamless collaboration, and data-driven insights",
+    "case_study_link": "https://pixels.blackspike.com/",
+    "cta": "Visit pixels",
+    "image": "/content-images/pixelate.pictures.avif",
+    "image_alt": "iPad showing pixelated wave painting",
+    "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
   }
 ]

@@ -5,6 +5,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://d9pe.github.io',
+  base: '/hello-dots',
+    outDir: 'public',
+  publicDir: 'static',
 
   fonts: [
     {

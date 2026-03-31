@@ -1,26 +1,22 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "Hello Dots",
+  "description": "Kleine Webdesign Agentur für E-Commerce und Websites",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "",
   "demo": {
-    "title": "Need design?",
-    "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Book a call"
+    "title": "Mit uns arbeiten?",
+    "content": "<strong>Kontaktiere uns und stell uns dein Projekt vor.</strong> Lass und gemeinsam herausfinden, ob wir zusammenarbeiten können und ob wir dich unterstützen können.",
+    "cta": "Projekt mit Hello Dots starten"
   },
   "theme_color": "#18181b",
   "nav": [
     {
-      "title": "Services",
+      "title": "Service",
       "link": "/#services"
     },
     {
-      "title": "Case studies",
+      "title": "Referenzen",
       "link": "/#case-studies"
-    },
-    {
-      "title": "Pricing",
-      "link": "/#pricing"
     },
     {
       "title": "FAQ",

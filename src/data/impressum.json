@@ -1,0 +1,30 @@
+{
+  "title": "Impressum",
+  "content": "Hier findest du alle rechtlichen Informationen zu Hello Dots sowie unsere Credits zu den Grafiken und Technologien, die wir auf dieser Webseite verwenden.",
+  "list": [
+    {
+      "item": "<strong>Anbieter:</strong> Hello Dots, [Dein Vorname Nachname], [Deine Straße Hausnummer], [Deine PLZ Ort]"
+    },
+    {
+      "item": "<strong>Kontakt:</strong> E-Mail: [Deine E-Mail-Adresse] | Telefon: [Deine Telefonnummer]"
+    },
+    {
+      "item": "Platzhalter-Logos von <a href='https://uicontent.co/svg-dummy-logo/' target='_blank'>uicontent.co</a>"
+    },
+    {
+      "item": "Testimonial-Avatar generiert durch <a href='https://thispersondoesnotexist.com/' target='_blank'>thispersondoesnotexist.com</a>"
+    },
+    {
+      "item": "Diverse Icons und Logo-Elemente von <a href='https://icones.js.org/' target='_blank'>icones.js.org</a> von <a href='https://github.com/antfu' target='_blank'>@antfu</a>"
+    },
+    {
+      "item": "Carousel-Funktionalität betrieben durch <a href='https://swiperjs.com/' target='_blank'>swiperjs.com</a>"
+    },
+    {
+      "item": "Schriftart 'Inter' von <a href='https://rsms.me/inter/' target='_blank'>rsms.me</a>"
+    },
+    {
+      "item": "Theme und 3D-Bilder von <a href='https://www.blackspike.com' target='_blank'>blackspike ltd</a> lizenziert unter <a href='https://creativecommons.org/licenses/by/4.0/' target='_blank'>CC BY 4.0</a>"
+    }
+  ]
+}

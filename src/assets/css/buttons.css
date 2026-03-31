@@ -4,6 +4,7 @@
 .bs-btn {
 
   @apply
+    cursor-pointer
     active:translate-y-[1px]
     active:bg-bs-surface-2
     bg-bs-surface-3

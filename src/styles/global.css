@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* 1. Tailwind v4 sagen, wie Darkmode funktioniert */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Standard-Variablen definieren */
+:root {
+  --background: #ffffff;
+  --text: #000000;
+}
+
+/* 3. Dark-Variablen definieren */
+.dark {
+  --background: #000000; /* Dunkelblau/Slate 900 */
+  --text: #f8fafc;
+}
+
+/* 4. Die Variablen global anwenden */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Test-Klasse für Tailwind-Utility-Check */
+.test-box {
+  @apply p-4 rounded;
+}

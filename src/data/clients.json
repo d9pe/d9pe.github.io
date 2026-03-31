@@ -1,27 +1,27 @@
 [
   {
-    "title": "Clamaane",
-    "image": "/content-images/logo-01.svg",
+    "title": "Sportclub Düsseldorf e.V.",
+    "image": "/content-images/sportclub-dus-logo.png",
+    "link": "https://www.sportclub-dus.de/"
+  },
+  {
+    "title": "Kettwiger Tennisgesellschaft e.V.",
+    "image": "/content-images/ktg_logo_retina.webp",
+    "link": "https://www.ktg-tennis.de/"
+  },
+  {
+    "title": "Günther Ingenieurbau",
+    "image": "/content-images/cropped-logo_small.png",
+    "link": "https://www.gib.ruhr/"
+  },
+  {
+    "title": "VarioTek",
+    "image": "/content-images/VT.png",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Komplex",
-    "image": "/content-images/logo-02.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "Splashed",
-    "image": "/content-images/logo-03.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "HydroLab",
-    "image": "/content-images/logo-04.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "Aromaf",
-    "image": "/content-images/logo-05.svg",
+    "title": "trackilive",
+    "image": "/content-images/TL.avif",
     "link": "https://www.blackspike.com/"
   },
   {
