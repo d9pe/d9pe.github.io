@@ -2,8 +2,7 @@ import { defineConfig, fontProviders } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-    site: 'https://d9pe.github.io',
-  base: 'd9pe.github.io',
+  site: 'https://d9pe.github.io',
   vite: {
     plugins: [tailwindcss()],
   },
