@@ -1,0 +1,11 @@
+{
+  "slug": "spike-news",
+  "title": "Powering Growth.<br>Simplifying Success.",
+  "sector": "Web design",
+  "content": "<strong>Our custom web design solution...</strong>",
+  "cta": "Visit spike.news",
+  "case_study_link": "https://www.spike.news",
+  "image": "/content-images/spike.news.avif",
+  "image_alt": "iPad showing spike.news website",
+  "bg": "bg-gradient-to-r from-indigo-500 to-purple-600"
+}
