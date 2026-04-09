@@ -2,7 +2,7 @@ backend:
   name: github
   repo: d9pe/d9pe.github.io
   branch: main
-  base_url: https://decap-oauth.workers.dev
+  base_url: https://decap-oauth.marvinborck.workers.dev
   auth_endpoint: /auth
 
 media_folder: public/content-images
