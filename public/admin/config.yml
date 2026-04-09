@@ -2,7 +2,8 @@ backend:
   name: github
   repo: d9pe/d9pe.github.io
   branch: main
-  base_url: https://api.netlify.com
+  base_url: https://decap-oauth.workers.dev
+  auth_endpoint: /auth
 
 media_folder: public/content-images
 public_folder: /content-images
@@ -17,54 +18,20 @@ collections:
     format: json
     identifier_field: slug
     fields:
-      - label: Slug
-        name: slug
-        widget: string
-        hint: "URL-freundlich, z.B. spike-news (keine Leerzeichen)"
-
-      - label: Titel
-        name: title
-        widget: string
-        hint: "HTML erlaubt, z.B. Powering Growth.<br>Simplifying Success."
-
-      - label: Sektor
-        name: sector
-        widget: string
-        hint: "z.B. Web Design, Development, 3D Design"
-
-      - label: Beschreibung
-        name: content
-        widget: text
-        hint: "HTML erlaubt für <strong>Fettschrift</strong> etc."
-
-      - label: Button-Text
-        name: cta
-        widget: string
-        hint: "z.B. Visit spike.news"
-
-      - label: Projekt-Link
-        name: case_study_link
-        widget: string
-
-      - label: Vorschaubild
-        name: image
-        widget: image
-
-      - label: Bild Alt-Text
-        name: image_alt
-        widget: string
-
+      - { label: Slug, name: slug, widget: string }
+      - { label: Titel, name: title, widget: string }
+      - { label: Sektor, name: sector, widget: string }
+      - { label: Beschreibung, name: content, widget: text }
+      - { label: Button-Text, name: cta, widget: string }
+      - { label: Projekt-Link, name: case_study_link, widget: string }
+      - { label: Vorschaubild, name: image, widget: image }
+      - { label: Alt-Text, name: image_alt, widget: string }
       - label: Hintergrund-Gradient
         name: bg
         widget: select
         options:
-          - label: "Indigo → Purple"
-            value: "bg-gradient-to-r from-indigo-500 to-purple-600"
-          - label: "Fuchsia → Cyan"
-            value: "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
-          - label: "Pink → Yellow"
-            value: "bg-gradient-to-r from-pink-500 to-yellow-500"
-          - label: "Green → Blue"
-            value: "bg-gradient-to-r from-green-500 to-blue-500"
-          - label: "Orange → Red"
-            value: "bg-gradient-to-r from-orange-500 to-red-500"
+          - { label: "Indigo → Purple", value: "bg-gradient-to-r from-indigo-500 to-purple-600" }
+          - { label: "Fuchsia → Cyan", value: "bg-gradient-to-r from-fuchsia-500 to-cyan-500" }
+          - { label: "Pink → Yellow", value: "bg-gradient-to-r from-pink-500 to-yellow-500" }
+          - { label: "Green → Blue", value: "bg-gradient-to-r from-green-500 to-blue-500" }
+          - { label: "Orange → Red", value: "bg-gradient-to-r from-orange-500 to-red-500" }
