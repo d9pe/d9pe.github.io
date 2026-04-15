@@ -1,14 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import caseStudies from '../../data/case_studies.json';
+
+const modules = import.meta.glob('../../data/caseStudies/*.json', { eager: true });
+const caseStudies = Object.values(modules).map((m: any) => m.default);
 
 export function getStaticPaths() {
+  const mods = import.meta.glob('../../data/caseStudies/*.json', { eager: true });
+  const caseStudies = Object.values(mods).map((m: any) => m.default);
   return caseStudies.map((cs) => ({
     params: { slug: cs.slug },
     props: { cs },
   }));
 }
-
 const { cs } = Astro.props;
 ---
 
