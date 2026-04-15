@@ -8,7 +8,6 @@ media_folder: public/content-images
 public_folder: /content-images
 
 collections:
-  # ——— Case Studies ———
   - name: caseStudies
     label: Case Studies
     label_singular: Case Study
@@ -18,16 +17,15 @@ collections:
     format: json
     fields:
       - { label: Slug, name: slug, widget: string }
-      - { label: Titel, name: title, widget: string, hint: "HTML erlaubt, z.B. <br> für Zeilenumbruch" }
+      - { label: Titel, name: title, widget: string }
       - { label: Sektor, name: sector, widget: string }
       - { label: Inhalt, name: content, widget: text }
-      - { label: Case Study Link, name: case_study_link, widget: string }
-      - { label: CTA Text, name: cta, widget: string }
+      - { label: Link, name: case_study_link, widget: string }
+      - { label: CTA, name: cta, widget: string }
       - { label: Bild, name: image, widget: image }
-      - { label: Bild Alt-Text, name: image_alt, widget: string }
-      - { label: Hintergrund (Tailwind), name: bg, widget: string, hint: "z.B. bg-gradient-to-r from-pink-500 to-yellow-500" }
+      - { label: Bild Alt, name: image_alt, widget: string }
+      - { label: Hintergrund, name: bg, widget: string }
 
-  # ——— FAQ ———
   - name: faq
     label: FAQ
     files:
@@ -35,14 +33,13 @@ collections:
         name: faq
         file: src/data/faq.json
         fields:
-          - label: FAQ Einträge
+          - label: Eintraege
             name: items
             widget: list
             fields:
               - { label: Frage, name: question, widget: string }
               - { label: Antwort, name: answer, widget: text }
 
-  # ——— Services ———
   - name: services
     label: Services
     files:
@@ -57,7 +54,6 @@ collections:
               - { label: Titel, name: title, widget: string }
               - { label: Beschreibung, name: description, widget: text }
 
-  # ——— Testimonials ———
   - name: testimonials
     label: Testimonials
     files:
@@ -74,7 +70,6 @@ collections:
               - { label: Zitat, name: quote, widget: text }
               - { label: Bild, name: image, widget: image, required: false }
 
-  # ——— Pricing ———
   - name: pricing
     label: Pricing
     files:
@@ -89,12 +84,7 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Preis, name: price, widget: string }
               - { label: Beschreibung, name: description, widget: text }
-              - label: Features
-                name: features
-                widget: list
-                field: { label: Feature, name: feature, widget: string }
 
-  # ——— Clients ———
   - name: clients
     label: Clients
     files:
@@ -110,19 +100,6 @@ collections:
               - { label: Logo, name: logo, widget: image, required: false }
               - { label: URL, name: url, widget: string, required: false }
 
-  # ——— Newsletter ———
-  - name: newsletter
-    label: Newsletter
-    files:
-      - label: Newsletter
-        name: newsletter
-        file: src/data/newsletter.json
-        fields:
-          - { label: Titel, name: title, widget: string }
-          - { label: Beschreibung, name: description, widget: text }
-          - { label: Button Text, name: cta, widget: string }
-
-  # ——— Global Settings ———
   - name: global_settings
     label: Global Settings
     files:
@@ -131,10 +108,8 @@ collections:
         file: src/data/global_settings.json
         fields:
           - { label: Site Name, name: site_name, widget: string }
-          - { label: Tagline, name: tagline, widget: string, required: false }
           - { label: E-Mail, name: email, widget: string, required: false }
 
-  # ——— Impressum ———
   - name: impressum
     label: Impressum
     files:
