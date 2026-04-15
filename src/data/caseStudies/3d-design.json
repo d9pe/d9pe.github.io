@@ -1,5 +1,5 @@
   {
-     "slug": "3d-design",
+    "slug": "3d-design",
     "title": "Enhance productivity,<br>boost efficiency.",
     "sector": "3D Design",
     "content": "Create, collaborate, and render — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
@@ -8,4 +8,4 @@
     "image": "/content-images/brighton.dog.avif",
     "image_alt": "iPad showing the web page of brighton.dog",
     "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
-  },
+  }

@@ -1,5 +1,5 @@
   {
-     "slug": "pixels",
+    "slug": "pixels",
     "title": "Accelerating Innovation.<br>Empowering Results.",
     "sector": "Development",
     "content": "Our dynamic design and build simplified productivity, delivering automated solutions, seamless collaboration, and data-driven insights",
@@ -8,4 +8,4 @@
     "image": "/content-images/pixelate.pictures.avif",
     "image_alt": "iPad showing pixelated wave painting",
     "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
-  },
+  }

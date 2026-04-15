@@ -12,7 +12,6 @@ import PricingSection from "../components/PricingSection.astro"
 import QuoteSection from "../components/QuoteSection.astro"
 import TestimonialsSection from "../components/TestimonialsSection.astro"
 
-import caseStudies from "../data/case_studies.json"
 import clients from "../data/clients.json"
 import faq from "../data/faq.json"
 import services from "../data/services.json"
@@ -22,6 +21,8 @@ import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
 import testimonials from "../data/testimonials.json"
 
+const files = await import.meta.glob('../data/caseStudies/*.json', { eager: true })
+const caseStudies = Object.values(files)
 ---
 
 <Layout title={ global_settings.title }>
@@ -53,6 +54,7 @@ import testimonials from "../data/testimonials.json"
     caseStudies={ caseStudies }
     title={ home.case_studies_title }
   />
+
 
   <!-- <TestimonialsSection
     testimonials={ testimonials }

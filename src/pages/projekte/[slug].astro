@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import caseStudies from '../../data/case_studies.json';
+
+export function getStaticPaths() {
+  return caseStudies.map((cs) => ({
+    params: { slug: cs.slug },
+    props: { cs },
+  }));
+}
+
+const { cs } = Astro.props;
+---
+
+<Layout title={cs.title.replace(/<br>/g, ' ')}>
+  <main class="bs-container py-16 max-w-4xl mx-auto">
+
+    <!-- Zurück -->
+    <a href="/#case-studies" class="text-sm uppercase tracking-widest opacity-60 hover:opacity-100 transition mb-12 inline-block">
+      ← Zurück
+    </a>
+
+    <!-- Hero-Bild -->
+    <div class:list={['rounded-2xl overflow-hidden p-12 flex justify-center mb-12', cs.bg]}>
+      <img src={cs.image} alt={cs.image_alt} class="rounded-xl w-full max-w-md drop-shadow-2xl" />
+    </div>
+
+    <!-- Sektor -->
+    <div class:list={['text-xs uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-linear-to-r mb-3', cs.bg]}
+      set:html={cs.sector}
+    />
+
+    <!-- Titel -->
+    <h1 class="bs-h2 mb-6" set:html={cs.title} />
+
+    <!-- Inhalt -->
+    <div class="bs-body-text mb-10" set:html={cs.content} />
+
+    <!-- Link zum Projekt -->
+    <a href={cs.case_study_link} target="_blank" class="bs-btn self-start">
+      {cs.cta}
+    </a>
+
+  </main>
+</Layout>

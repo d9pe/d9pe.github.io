@@ -36,3 +36,41 @@
     active:before:opacity-0
     ;
 }
+
+.bs-btn-outline {
+  @apply
+    cursor-pointer
+    active:translate-y-[1px]
+    duration-200
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-white/75
+    font-semibold
+    px-5
+    py-4
+    rounded-md
+    text-bs-foreground-light
+    text-center
+    transition-all
+    relative
+    overflow-clip
+    ring-2
+    ring-bs-surface-3
+    bg-transparent
+    hover:bg-bs-surface-3/20
+    active:bg-bs-surface-3/30
+    before:flex
+    before:inset-0
+    before:bg-white
+    before:rounded-sm
+    before:absolute
+    before:opacity-0
+    before:-translate-x-full
+    before:transition-all
+    before:duration-300
+    before:ease-out
+    hover:before:translate-x-0
+    hover:before:opacity-10
+    active:before:opacity-0
+    ;
+}
