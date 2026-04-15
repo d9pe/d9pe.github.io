@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: d9pe/d9pe.github.io
+  name: git-gateway
   branch: main
-  base_url: https://classy-palmier-0bbc7f.netlify.app
-  auth_endpoint: /.netlify/identity
 
 media_folder: public/content-images
 public_folder: /content-images
