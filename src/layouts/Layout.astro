@@ -39,6 +39,8 @@ const { title, description } = Astro.props
 
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-inter-display" preload />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body id="top">
@@ -61,5 +63,16 @@ const { title, description } = Astro.props
 
     <!-- Demo dialog modal -->
     <DialogModal id="demo" content={global_settings.demo} />
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </body>
 </html>
