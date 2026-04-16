@@ -6,6 +6,7 @@ media_folder: public/content-images
 public_folder: /content-images
 
 collections:
+  # Case Studies
   - name: caseStudies
     label: Case Studies
     label_singular: Case Study
@@ -24,6 +25,7 @@ collections:
       - { label: Bild Alt, name: image_alt, widget: string }
       - { label: Hintergrund, name: bg, widget: string }
 
+  # FAQ
   - name: faq
     label: FAQ
     files:
@@ -32,12 +34,13 @@ collections:
         file: src/data/faq.json
         fields:
           - label: Eintraege
-            name: items
+            name: root
             widget: list
             fields:
               - { label: Frage, name: question, widget: string }
               - { label: Antwort, name: answer, widget: text }
 
+  # Services
   - name: services
     label: Services
     files:
@@ -46,12 +49,16 @@ collections:
         file: src/data/services.json
         fields:
           - label: Services
-            name: items
+            name: root
             widget: list
             fields:
               - { label: Titel, name: title, widget: string }
-              - { label: Beschreibung, name: description, widget: text }
+              - { label: Inhalt, name: content, widget: text }
+              - { label: CTA, name: cta, widget: string }
+              - { label: Bild, name: image, widget: image }
+              - { label: Bild Alt, name: image_alt, widget: string }
 
+  # Testimonials
   - name: testimonials
     label: Testimonials
     files:
@@ -60,14 +67,13 @@ collections:
         file: src/data/testimonials.json
         fields:
           - label: Testimonials
-            name: items
+            name: root
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Rolle, name: role, widget: string }
               - { label: Zitat, name: quote, widget: text }
-              - { label: Bild, name: image, widget: image, required: false }
+              - { label: Handle, name: handle, widget: string }
 
+  # Pricing
   - name: pricing
     label: Pricing
     files:
@@ -76,13 +82,21 @@ collections:
         file: src/data/pricing.json
         fields:
           - label: Pakete
-            name: items
+            name: root
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Preis, name: price, widget: string }
-              - { label: Beschreibung, name: description, widget: text }
+              - { label: Titel, name: title, widget: string }
+              - { label: Tag, name: tag, widget: string }
+              - { label: Inhalt, name: content, widget: text }
+              - { label: CTA, name: cta, widget: string }
+              - { label: Preis, name: price, widget: number }
+              - label: Leistungen
+                name: services
+                widget: list
+                fields:
+                  - { label: Punkt, name: item, widget: string }
 
+  # Clients
   - name: clients
     label: Clients
     files:
@@ -91,13 +105,14 @@ collections:
         file: src/data/clients.json
         fields:
           - label: Clients
-            name: items
+            name: root
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Logo, name: logo, widget: image, required: false }
-              - { label: URL, name: url, widget: string, required: false }
+              - { label: Name, name: title, widget: string }
+              - { label: Logo, name: image, widget: image }
+              - { label: Link, name: link, widget: string }
 
+  # Global Settings
   - name: global_settings
     label: Global Settings
     files:
@@ -105,14 +120,25 @@ collections:
         name: global_settings
         file: src/data/global_settings.json
         fields:
-          - { label: Site Name, name: site_name, widget: string }
-          - { label: E-Mail, name: email, widget: string, required: false }
-
-  - name: impressum
-    label: Impressum
-    files:
-      - label: Impressum
-        name: impressum
-        file: src/data/impressum.json
-        fields:
-          - { label: Inhalt, name: content, widget: markdown }
+          - { label: Site Name, name: title, widget: string }
+          - { label: Beschreibung, name: description, widget: text }
+          - { label: Theme Farbe, name: theme_color, widget: color }
+          - label: Demo Sektion
+            name: demo
+            widget: object
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Inhalt, name: content, widget: text }
+              - { label: CTA, name: cta, widget: string }
+          - label: Navigation
+            name: nav
+            widget: list
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
+          - label: Social Links
+            name: social_links
+            widget: list
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
