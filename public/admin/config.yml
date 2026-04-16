@@ -34,7 +34,7 @@ collections:
         file: src/data/faq.json
         fields:
           - label: Eintraege
-            name: root
+            name: items
             widget: list
             fields:
               - { label: Frage, name: question, widget: string }
@@ -49,7 +49,7 @@ collections:
         file: src/data/services.json
         fields:
           - label: Services
-            name: root
+            name: items
             widget: list
             fields:
               - { label: Titel, name: title, widget: string }
@@ -67,7 +67,7 @@ collections:
         file: src/data/testimonials.json
         fields:
           - label: Testimonials
-            name: root
+            name: items
             widget: list
             fields:
               - { label: Zitat, name: quote, widget: text }
@@ -82,7 +82,7 @@ collections:
         file: src/data/pricing.json
         fields:
           - label: Pakete
-            name: root
+            name: items
             widget: list
             fields:
               - { label: Titel, name: title, widget: string }
@@ -105,7 +105,7 @@ collections:
         file: src/data/clients.json
         fields:
           - label: Clients
-            name: root
+            name: items
             widget: list
             fields:
               - { label: Name, name: title, widget: string }
