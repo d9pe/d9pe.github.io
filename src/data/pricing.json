@@ -1,4 +1,4 @@
-[
+{"items": [
   {
     "title": "Basic plan",
     "tag": "Most popular",
@@ -27,4 +27,4 @@
       { "item": "120GB storage allowance" }
     ]
   }
-]
+]}

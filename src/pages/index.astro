@@ -12,14 +12,20 @@ import PricingSection from "../components/PricingSection.astro"
 import QuoteSection from "../components/QuoteSection.astro"
 import TestimonialsSection from "../components/TestimonialsSection.astro"
 
-import clients from "../data/clients.json"
-import faq from "../data/faq.json"
-import services from "../data/services.json"
+import clientsData from "../data/clients.json"
+import faqData from "../data/faq.json"
+import servicesData from "../data/services.json"
 import home from "../data/home.json"
-import pricing from "../data/pricing.json"
+import pricingData from "../data/pricing.json"
 import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
-import testimonials from "../data/testimonials.json"
+import testimonialsData from "../data/testimonials.json"
+
+const clients = clientsData.items
+const faq = faqData.items
+const services = servicesData.items
+const pricing = pricingData.items
+const testimonials = testimonialsData.items
 
 const files = await import.meta.glob('../data/caseStudies/*.json', { eager: true })
 const caseStudies = Object.values(files)
