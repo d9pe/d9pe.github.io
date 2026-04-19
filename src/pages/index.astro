@@ -1,80 +1,61 @@
 ---
-
+import { getCollection } from 'astro:content'
 import Layout from "../layouts/Layout.astro"
-
 import CaseStudiesSection from "../components/CaseStudiesSection.astro"
 import ClientsSection from "../components/ClientsSection.astro"
 import FaqSection from "../components/FaqSection.astro"
 import ServicesCarousel from "../components/ServicesCarousel.astro"
 import HeroSection from "../components/HeroSection.astro"
 import NewsletterSection from "../components/NewsletterSection.astro"
-import PricingSection from "../components/PricingSection.astro"
 import QuoteSection from "../components/QuoteSection.astro"
-import TestimonialsSection from "../components/TestimonialsSection.astro"
 
-import clientsData from "../data/clients.json"
-import faqData from "../data/faq.json"
-import servicesData from "../data/services.json"
 import home from "../data/home.json"
-import pricingData from "../data/pricing.json"
 import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
-import testimonialsData from "../data/testimonials.json"
 
-const clients = clientsData.items
-const faq = faqData.items
-const services = servicesData.items
-const pricing = pricingData.items
-const testimonials = testimonialsData.items
+const faq = await getCollection('faq')
+const services = await getCollection('services')
+const clients = await getCollection('clients')
+const pricing = await getCollection('pricing')
+const testimonials = await getCollection('testimonials')
 
-const files = await import.meta.glob('../data/caseStudies/*.json', { eager: true })
+const files = import.meta.glob('../data/caseStudies/*.json', { eager: true })
 const caseStudies = Object.values(files)
 ---
 
-<Layout title={ global_settings.title }>
+<Layout title={global_settings.title}>
 
   <HeroSection
-    content={ home.hero_content }
-    settings={ global_settings }
-    title={ home.hero_title }
+    content={home.hero_content}
+    settings={global_settings}
+    title={home.hero_title}
   />
 
   <ServicesCarousel
-    services={ services }
-    title={ home.services_title }
+    services={services.map(s => s.data)}
+    title={home.services_title}
   />
 
   <ClientsSection
-    clients={ clients }
-    title={ home.clients_title }
+    clients={clients.map(c => c.data)}
+    title={home.clients_title}
   />
 
   <QuoteSection
-    cite={ home.quote_cite }
-    content={ home.quote_content }
-    image={ home.quote_image }
-    role={ home.quote_role }
+    cite={home.quote_cite}
+    content={home.quote_content}
+    image={home.quote_image}
+    role={home.quote_role}
   />
 
   <CaseStudiesSection
-    caseStudies={ caseStudies }
-    title={ home.case_studies_title }
+    caseStudies={caseStudies}
+    title={home.case_studies_title}
   />
 
-
-  <!-- <TestimonialsSection
-    testimonials={ testimonials }
-    title={ home.testimonials_title }
-  /> 
-
-  <PricingSection
-    pricing={ pricing }
-    title={ home.pricing_title }
-  /> -->
-
   <FaqSection
-    faq={ faq }
-    title={ home.faq_title }
+    faq={faq.map(f => f.data)}
+    title={home.faq_title}
   />
 
   <NewsletterSection newsletter={newsletter} />
