@@ -113,3 +113,34 @@ collections:
         widget: list
         fields:
           - { label: Punkt, name: item, widget: string }
+
+  # Global Settings
+  - name: global_settings
+    label: Global Settings
+    files:
+      - label: Global Settings
+        name: global_settings
+        file: src/data/global_settings.json
+        fields:
+          - { label: Site Name, name: title, widget: string }
+          - { label: Beschreibung, name: description, widget: text }
+          - { label: Theme Farbe, name: theme_color, widget: color }
+          - label: Demo Sektion
+            name: demo
+            widget: object
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Inhalt, name: content, widget: text }
+              - { label: CTA, name: cta, widget: string }
+          - label: Navigation
+            name: nav
+            widget: list
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
+          - label: Social Links
+            name: social_links
+            widget: list
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Link, name: link, widget: string }
