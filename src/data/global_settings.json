@@ -9,6 +9,7 @@
     "cta": "Projekt mit Hello Dots starten"
   },
   "theme_color": "#18181b",
+  "accent_color": "#fcd34d",
   "nav": [
     {
       "title": "Service",

@@ -74,3 +74,8 @@
     active:before:opacity-0
     ;
 }
+
+.bs-btn {
+  background-color: var(--accent);
+  color: #000;
+}
