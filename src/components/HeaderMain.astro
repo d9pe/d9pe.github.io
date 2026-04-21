@@ -21,7 +21,7 @@ const sortedNav = [...settings.nav].sort(
         sortedNav.map((item) => (
           <a
             key={item.link} 
-            class="bs-btn bg-transparent! before:translate-y-full hover:before:translate-y-0"
+            class="bs-btn bg-transparent! text-bs-foreground-light! before:translate-y-full hover:before:translate-y-0"
             href={item.link}
           >
             {item.title}
