@@ -125,6 +125,7 @@ collections:
           - { label: Site Name, name: title, widget: string }
           - { label: Beschreibung, name: description, widget: text }
           - { label: Theme Farbe, name: theme_color, widget: color }
+          - { label: Accent Color, name: accent_color, widget: color }
           - label: Demo Sektion
             name: demo
             widget: object

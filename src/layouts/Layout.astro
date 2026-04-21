@@ -19,7 +19,11 @@ import HeaderMain from '../components/HeaderMain.astro'
 
 const { title, description } = Astro.props
 ---
-
+<style define:vars={{ accentColor: global_settings.accent_color }}>
+  :root {
+    --accent: var(--accentColor);
+  }
+</style>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
