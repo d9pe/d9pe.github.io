@@ -1,15 +1,5 @@
 {
-  "title": "Hello Dots",
-  "description": "Kleine Webdesign Agentur für E-Commerce und Websites",
-  "social_image": "/1200x630.jpg",
   "base_url": "",
-  "demo": {
-    "title": "Mit uns arbeiten?",
-    "content": "<strong>Kontaktiere uns und stell uns dein Projekt vor.</strong> Lass und gemeinsam herausfinden, ob wir zusammenarbeiten können und ob wir dich unterstützen können.",
-    "cta": "Projekt mit Hello Dots starten"
-  },
-  "theme_color": "#18181b",
-  "accent_color": "#fcd34d",
   "nav": [
     {
       "title": "Service",
@@ -26,9 +16,17 @@
     {
       "title": "Newsletter",
       "link": "/#newsletter"
+    },
+    {
+      "title": "About",
+      "link": "/about"
     }
   ],
-
+  "demo": {
+    "title": "Mit uns arbeiten?",
+    "content": "<strong>Kontaktiere uns und stell uns dein Projekt vor.</strong> Lass und gemeinsam herausfinden, ob wir zusammenarbeiten können und ob wir dich unterstützen können.",
+    "cta": "Projekt mit Hello Dots starten"
+  },
   "social_links": [
     {
       "title": "Twitter / X",
@@ -50,5 +48,10 @@
       "title": "Bluesky",
       "link": "https://bsky.app/profile/blackspike.com/"
     }
-  ]
+  ],
+  "social_image": "/1200x630.jpg",
+  "theme_color": "#18181b",
+  "accent_color": "#fcd34d",
+  "title": "Hello Dots",
+  "description": "Kleine Webdesign Agentur für E-Commerce und Websites"
 }
